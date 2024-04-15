@@ -1,0 +1,89 @@
+/* 基本のリセットとボックスサイジングの設定 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* アプリ全体のフォントと背景 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* 淡い青色 */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* フォーム全体のスタイリング */
+.new-item-form {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #ffb6c1; /* 淡いピンク色 */
+    border-radius: 4px;
+}
+
+/* ボタンのスタイリング */
+button {
+    background-color: #ff69b4; /* 明るいピンク色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1493; /* より濃いピンク色 */
+}
+
+/* ヘッダーのスタイリング */
+.header {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* リストのスタイリング */
+.list {
+    list-style: none;
+}
+
+.list li {
+    background: #ffffff;
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* チェックボックスのカスタムスタイリング */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* 危険ボタン（削除ボタン）のスタイリング */
+.btn-danger {
+    background-color: #ff4500; /* 明るいオレンジ色 */
+}
+
+.btn-danger:hover {
+    background-color: #ff6347; /* トマト色 */
+}
